@@ -28,8 +28,11 @@ end
 def list_of_directors(source)
   # Write this implementation
   
-  
-  
+  name_array = []
+  source.length.times do |cycle_directors|
+    name_array.push(source[cycle_directors][:name])
+  end
+  return name_array
 end
 
 def total_gross(source)
