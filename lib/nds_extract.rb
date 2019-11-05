@@ -54,9 +54,7 @@ def total_gross(source)
   director_name_array.length.times do |index|
     grand_total = director_total_hash[director_name_array[index]]
   end
-  
-  
-  
+  return grand_total
 end
 
 
