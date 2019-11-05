@@ -33,6 +33,7 @@ def list_of_directors(source)
     name_array.push(source[cycle_directors][:name])
   end
   return name_array
+  
 end
 
 def total_gross(source)
