@@ -47,7 +47,13 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   
-  directors_totals
+  director_total_hash = directors_totals(source)
+  director_name_array = list_of_directors(source)
+  grand_total = 0
+  
+  director_name_array.length.times do |index|
+    grand_total = director_total_hash[director_name_array[index]]
+  end
   
   
   
